@@ -1,2 +1,0 @@
-# SDN-decentralizer
-about sdn
