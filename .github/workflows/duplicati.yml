@@ -1,2 +1,11 @@
-- name: Duplicati Action
-  uses: peter-evans/duplicati-action@v1.0.0
+name: Duplicati
+on: push
+jobs:
+  duplicati:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Duplicati
+        uses: ./
+        with:
+          args: help backup
